@@ -1,0 +1,110 @@
+/*
+    Redwolf Design Studio SCSS - JMendoza
+    
+    Created: 2017-07-05
+    Dependencies: Wordpress v4.8, WP FullPage v4.0.5.2
+*/
+
+
+
+
+
+
+
+/* fonts */
+$font-face-branding: 'KronaOne-Regular', sans-serif;
+@font-face {
+  font-family: 'KronaOne-Regular';
+  src: url('fonts/KronaOne-Regular.eot');
+  src: url('fonts/KronaOne-Regular.woff2') format('woff2'),
+       url('fonts/KronaOne-Regular.woff') format('woff'),
+       url('fonts/KronaOne-Regular.ttf') format('truetype'),
+       url('fonts/KronaOne-Regular.svg#KronaOne-Regular') format('svg'),
+       url('fonts/KronaOne-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+$font-face-thin: 'ExpoSansStd-Thin', sans-serif;
+@font-face {
+  font-family: 'ExpoSansStd-Thin';
+  src: url('fonts/ExpoSansStd-Thin.eot');
+  src: url('fonts/ExpoSansStd-Thin.woff2') format('woff2'),
+       url('fonts/ExpoSansStd-Thin.woff') format('woff'),
+       url('fonts/ExpoSansStd-Thin.ttf') format('truetype'),
+       url('fonts/ExpoSansStd-Thin.svg#ExpoSansStd-Thin') format('svg'),
+       url('fonts/ExpoSansStd-Thin.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-face-light: 'ExpoSansStd-Light', sans-serif;
+@font-face {
+  font-family: 'ExpoSansStd-Light';
+  src: url('fonts/ExpoSansStd-Light.eot');
+  src: url('fonts/ExpoSansStd-Light.woff2') format('woff2'),
+       url('fonts/ExpoSansStd-Light.woff') format('woff'),
+       url('fonts/ExpoSansStd-Light.ttf') format('truetype'),
+       url('fonts/ExpoSansStd-Light.svg#ExpoSansStd-Light') format('svg'),
+       url('fonts/ExpoSansStd-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-face-medium: 'ExpoSansStd-Medium', sans-serif;
+@font-face {
+  font-family: 'ExpoSansStd-Medium';
+  src: url('fonts/ExpoSansStd-Medium.eot');
+  src: url('fonts/ExpoSansStd-Medium.woff2') format('woff2'),
+       url('fonts/ExpoSansStd-Medium.woff') format('woff'),
+       url('fonts/ExpoSansStd-Medium.ttf') format('truetype'),
+       url('fonts/ExpoSansStd-Medium.svg#ExpoSansStd-Medium') format('svg'),
+       url('fonts/ExpoSansStd-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-face-semibold: 'ExpoSansStd-SemiBold', sans-serif;
+@font-face {
+  font-family: 'ExpoSansStd-SemiBold';
+  src: url('fonts/ExpoSansStd-SemiBold.eot');
+  src: url('fonts/ExpoSansStd-SemiBold.woff2') format('woff2'),
+       url('fonts/ExpoSansStd-SemiBold.woff') format('woff'),
+       url('fonts/ExpoSansStd-SemiBold.ttf') format('truetype'),
+       url('fonts/ExpoSansStd-SemiBold.svg#ExpoSansStd-SemiBold') format('svg'),
+       url('fonts/ExpoSansStd-SemiBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-face-bold: 'ExpoSansStd-Bold', sans-serif;
+@font-face {
+  font-family: 'ExpoSansStd-Bold';
+  src: url('fonts/ExpoSansStd-Bold.eot');
+  src: url('fonts/ExpoSansStd-Bold.woff2') format('woff2'),
+       url('fonts/ExpoSansStd-Bold.woff') format('woff'),
+       url('fonts/ExpoSansStd-Bold.ttf') format('truetype'),
+       url('fonts/ExpoSansStd-Bold.svg#ExpoSansStd-Bold') format('svg'),
+       url('fonts/ExpoSansStd-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+/* mobile layout (<420px) */
+
+
+
+
+
+
+
+
+/* desktop layout (>420px) */
