@@ -65,6 +65,17 @@
 .text-center {
   text-align: center !important; }
 
+.text-color-gray {
+  color: #888888; }
+
+.text-color-orange {
+  color: #ee9922; }
+
+ol.blank-list,
+ul.blank-list {
+  padding: 0;
+  margin: 0; }
+
 .homepage-section {
   height: inherit;
   width: inherit;
@@ -101,6 +112,29 @@
 .rds-subheading {
   font-family: "ExpoSansStd-Medium", sans-serif; }
 
+.rds-section {
+  width: 100%;
+  margin: 0; }
+
+.rds-row {
+  display: block;
+  float: left;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+  .rds-row .rds-col-m-3,
+  .rds-row .rds-col-m-4,
+  .rds-row .rds-col-m-6,
+  .rds-row .rds-col-m-12,
+  .rds-row .rds-col-d-3,
+  .rds-row .rds-col-d-4,
+  .rds-row .rds-col-d-6,
+  .rds-row .rds-col-d-12 {
+    height: 100%;
+    float: left;
+    margin: 0;
+    padding: 0; }
+
 /* mobile layout (420px) */
 @media only screen and (max-width: 419px) {
   body {
@@ -126,6 +160,18 @@
     color: #dd0000;
     text-decoration: underline; }
 
+  .rds-col-m-3 {
+    width: 25%; }
+
+  .rds-col-m-4 {
+    width: 33.33333%; }
+
+  .rds-col-m-6 {
+    width: 50%; }
+
+  .rds-col-m-12 {
+    width: 100%; }
+
   .homepage-section {
     background: none !important; } }
 /* desktop layout (420px) */
@@ -149,6 +195,18 @@
   a {
     color: #dd0000;
     text-decoration: underline; }
+
+  .rds-col-d-3 {
+    width: 25%; }
+
+  .rds-col-d-4 {
+    width: 33.33333%; }
+
+  .rds-col-d-6 {
+    width: 50%; }
+
+  .rds-col-d-12 {
+    width: 100%; }
 
   .homepage-section {
     background: linear-gradient(rgba(255, 255, 255, 0.25), white), url(https://www.redwolfdesignstudio.com/wp-content/uploads/2017/07/laptop-coffee-bg.jpg);

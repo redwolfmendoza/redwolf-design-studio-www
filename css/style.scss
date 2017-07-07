@@ -15,6 +15,7 @@
 $text-color-black: #131313;
 $text-color-gray: #888888;
 $link-color-red: #dd0000;
+$link-color-orange: #ee9922;
 
 
 
@@ -147,6 +148,18 @@ $font-face-bold: 'ExpoSansStd-Bold', sans-serif;
 .text-center {
     text-align: center !important;
 }
+.text-color-gray {
+    color: $text-color-gray;
+}
+.text-color-orange {
+    color: $link-color-orange;
+}
+ol.blank-list,
+ul.blank-list {
+    padding:0;margin:0;
+}
+
+
 .homepage-section {
     height:inherit;width:inherit;padding:0;margin:0;overflow:hidden;
     
@@ -164,6 +177,8 @@ $font-face-bold: 'ExpoSansStd-Bold', sans-serif;
         width: 100%;margin:20px 0;
     }
 }
+
+
 .rds-branding {
     color: $text-color-black !important;
     font-family: $font-face-branding;
@@ -182,6 +197,22 @@ $font-face-bold: 'ExpoSansStd-Bold', sans-serif;
     font-family: $font-face-medium;
 }
 
+.rds-section {
+    width:100%;margin:0;
+}
+.rds-row {
+    display:block;float:left;
+    padding:0;margin:0;width:100%;
+    
+    .rds-col-m-3,
+    .rds-col-m-4,
+    .rds-col-m-6,
+    .rds-col-m-12,
+    .rds-col-d-3,
+    .rds-col-d-4,
+    .rds-col-d-6,
+    .rds-col-d-12 {height:100%;float:left;margin:0;padding:0;}
+}
 
 
 /* mobile layout (420px) */
@@ -210,6 +241,11 @@ $font-face-bold: 'ExpoSansStd-Bold', sans-serif;
         text-decoration: underline;
     }
     
+    
+    .rds-col-m-3 {width:25%;}
+    .rds-col-m-4 {width:33.33333%;}
+    .rds-col-m-6 {width:50%;}
+    .rds-col-m-12 {width:100%;}
     
     
     .homepage-section {
@@ -250,6 +286,11 @@ $font-face-bold: 'ExpoSansStd-Bold', sans-serif;
         text-decoration: underline;
     }
     
+    
+    .rds-col-d-3 {width:25%;}
+    .rds-col-d-4 {width:33.33333%;}
+    .rds-col-d-6 {width:50%;}
+    .rds-col-d-12 {width:100%;}
 
     
     .homepage-section {
