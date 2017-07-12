@@ -223,6 +223,24 @@ ul.blank-list {
     .rds-col-d-6,
     .rds-col-d-12 {height:100%;float:left;margin:0;padding:0;}
 }
+.rds-col-padding {padding:0 15px;}
+.skill-container {
+    .meter-container {
+        display: block;
+        height: 34px;
+        width: 100%;
+        border-radius: 5px;
+        border: 2px solid #000;
+        padding: 2px;
+        background-color: #fff;
+        .meter-fill {
+            display: block;
+            width: 100%;height: 26px;
+            background-color: $link-color-orange;
+        }
+    }
+}
+
 
 
 /* mobile layout (420px) */
@@ -263,7 +281,7 @@ ul.blank-list {
     }
     .rds-section-label {
         padding-bottom: $heading-padding-mobile;
-        border-bottom: $text-color-gray 1px solid;
+        border-bottom: $link-color-orange 2px solid;
         margin-bottom: $line-height-heading-mobile;
     }
     
@@ -316,8 +334,8 @@ ul.blank-list {
         display:block !important;
     }
     .rds-section-label {
-        padding-bottom: $heading-padding-desktop;
-        border-bottom: $text-color-gray 1px solid;
+        padding-bottom: $heading-padding-desktop / 2;
+        border-bottom: $link-color-orange 4px solid;
         margin-bottom: $line-height-heading-desktop;
     }
 
