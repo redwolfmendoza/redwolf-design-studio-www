@@ -47,18 +47,16 @@
 .fp-slides .inner-slide .entry-title {
   display: none !important; }
 
-.section.homepage-intro .slide.homepage-intro article div.inner-slide {
-  margin: 0 !important;
-  padding: 0 !important; }
+.section .slide article .inner-slide {
+  padding: 0 !important;
+  margin: 0 30px !important; }
+
+.section.homepage-intro .slide article .inner-slide {
+  padding: 0 !important;
+  margin: 0 !important; }
 
 .homepage-intro-wrapper {
   margin: 0 15px; }
-
-.section .slide article {
-  width: 80% !important; }
-
-.section.homepage-intro .slide.homepage-intro article {
-  width: 100% !important; }
 
 /* defaults */
 .img-responsive {
@@ -78,6 +76,12 @@ ol.blank-list,
 ul.blank-list {
   padding: 0;
   margin: 0; }
+
+ul.bullet-list {
+  padding: 0;
+  list-style-type: disc !important; }
+  ul.bullet-list li {
+    list-style-type: disc !important; }
 
 .homepage-section {
   height: inherit;
@@ -141,19 +145,42 @@ ul.blank-list {
 .rds-col-padding {
   padding: 0 15px; }
 
-.skill-container .meter-container {
-  display: block;
-  height: 34px;
-  width: 100%;
-  border-radius: 5px;
-  border: 2px solid #000;
-  padding: 2px;
-  background-color: #fff; }
-  .skill-container .meter-container .meter-fill {
+.skill-container {
+  float: right; }
+  .skill-container .meter-container {
     display: block;
+    height: 34px;
     width: 100%;
-    height: 26px;
-    background-color: #ee9922; }
+    border-radius: 5px;
+    border: 2px solid #000;
+    padding: 2px;
+    background-color: #fff; }
+    .skill-container .meter-container .meter-fill {
+      display: block;
+      height: 26px;
+      background-color: #ee9922; }
+
+/* my skills */
+#skill-meter-html .meter-fill {
+  width: 100%; }
+
+#skill-meter-css .meter-fill {
+  width: 90%; }
+
+#skill-meter-jquery .meter-fill {
+  width: 75%; }
+
+#skill-meter-php .meter-fill {
+  width: 75%; }
+
+#skill-meter-photoshop .meter-fill {
+  width: 100%; }
+
+#skill-meter-wordpress .meter-fill {
+  width: 75%; }
+
+#skill-meter-github .meter-fill {
+  width: 75%; }
 
 /* mobile layout (420px) */
 @media only screen and (max-width: 419px) {
@@ -180,6 +207,9 @@ ul.blank-list {
     color: #dd0000;
     text-decoration: underline; }
 
+  ul.bullet-list {
+    margin: 0 0 24px 24px; }
+
   .rds-col-m-3 {
     width: 25%; }
 
@@ -198,7 +228,13 @@ ul.blank-list {
   .rds-section-label {
     padding-bottom: 12px;
     border-bottom: #ee9922 2px solid;
-    margin-bottom: 24px; } }
+    margin-bottom: 24px; }
+
+  .section .slide article {
+    width: 100% !important; }
+
+  .section.homepage-intro .slide article {
+    width: 100% !important; } }
 /* desktop layout (420px) */
 @media only screen and (min-width: 419px) {
   body {
@@ -220,6 +256,9 @@ ul.blank-list {
   a {
     color: #dd0000;
     text-decoration: underline; }
+
+  ul.bullet-list {
+    margin: 0 0 24px 24px; }
 
   .rds-col-d-3 {
     width: 25%; }
@@ -245,6 +284,19 @@ ul.blank-list {
   .rds-section-label {
     padding-bottom: 12px;
     border-bottom: #ee9922 4px solid;
-    margin-bottom: 48px; } }
+    margin-bottom: 48px; }
+
+  .section .slide article {
+    width: 100% !important; }
+
+  .section.homepage-intro .slide article {
+    width: 100% !important; } }
+/* desktop layout (840px) */
+@media only screen and (min-width: 839px) {
+  .section .slide article {
+    width: 80% !important; }
+
+  .section.homepage-intro .slide article {
+    width: 100% !important; } }
 
 /*# sourceMappingURL=output.css.map */
