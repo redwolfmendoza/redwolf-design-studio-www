@@ -14,6 +14,7 @@
 /* fonts */
 $text-color-black: #131313;
 $text-color-gray: #888888;
+$text-color-offwhite: #ececec;
 $link-color-red: #dd0000;
 $link-color-orange: #ee9922;
 
@@ -177,8 +178,20 @@ ol.blank-list,
 ul.blank-list {
     padding:0;margin:0;
 }
+ul.skill-list {
+    padding:0;margin:0;
+    >li {
+        float: left;
+        display: block;
+        padding:20px;
+        
+        &:nth-child(even){
+            background-color: $text-color-offwhite;
+        }
+    }
+}
 ul.bullet-list {
-    padding:0;
+    padding:0;margin:0;
     list-style-type:disc !important;
     li {
         list-style-type:disc !important;
@@ -244,8 +257,12 @@ ul.bullet-list {
 .skill-container {
     float:right;
     
+    .skill-meter-label {
+        font-weight:bold;
+    }
     .meter-container {
         display: block;
+        position:relative;
         height: 34px;
         width: 100%;
         border-radius: 5px;
@@ -253,6 +270,18 @@ ul.bullet-list {
         padding: 2px;
         background-color: #fff;
         
+        .meter-value {
+            position:absolute;
+            width: inherit;
+            height: 34px;
+            top: 2px;
+            left: 50%;
+            margin-left: -50%;
+            text-align:center;
+            text-shadow: 1px 1px $text-color-black;
+            font-weight: bold;
+            color: #ffffff;
+        }
         .meter-fill {
             display: block;
             height: 26px;
@@ -260,6 +289,7 @@ ul.bullet-list {
         }
     }
 }
+
 
 
 /* my skills */
@@ -285,7 +315,7 @@ ul.bullet-list {
 }
 #skill-meter-photoshop {
     .meter-fill {
-        width:100%;
+        width:75%;
     }
 }
 #skill-meter-wordpress {

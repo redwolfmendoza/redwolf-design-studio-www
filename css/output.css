@@ -77,8 +77,19 @@ ul.blank-list {
   padding: 0;
   margin: 0; }
 
+ul.skill-list {
+  padding: 0;
+  margin: 0; }
+  ul.skill-list > li {
+    float: left;
+    display: block;
+    padding: 20px; }
+    ul.skill-list > li:nth-child(even) {
+      background-color: #ececec; }
+
 ul.bullet-list {
   padding: 0;
+  margin: 0;
   list-style-type: disc !important; }
   ul.bullet-list li {
     list-style-type: disc !important; }
@@ -147,14 +158,28 @@ ul.bullet-list {
 
 .skill-container {
   float: right; }
+  .skill-container .skill-meter-label {
+    font-weight: bold; }
   .skill-container .meter-container {
     display: block;
+    position: relative;
     height: 34px;
     width: 100%;
     border-radius: 5px;
     border: 2px solid #000;
     padding: 2px;
     background-color: #fff; }
+    .skill-container .meter-container .meter-value {
+      position: absolute;
+      width: inherit;
+      height: 34px;
+      top: 2px;
+      left: 50%;
+      margin-left: -50%;
+      text-align: center;
+      text-shadow: 1px 1px #131313;
+      font-weight: bold;
+      color: #ffffff; }
     .skill-container .meter-container .meter-fill {
       display: block;
       height: 26px;
@@ -174,7 +199,7 @@ ul.bullet-list {
   width: 75%; }
 
 #skill-meter-photoshop .meter-fill {
-  width: 100%; }
+  width: 75%; }
 
 #skill-meter-wordpress .meter-fill {
   width: 75%; }
