@@ -1,3 +1,27 @@
-.DS_Store
-.sass-cache/*
-css/.sass-cache/*
+#==================================================
+# gitignore - Do not track the listed files
+# The pattern '[filename]', '*.[extension]' exclude a single file
+# The pattern '[dir]/' excludes a directory named '[dir]' and (implicitly) everything under it
+# The pattern '[dir]/*' excludes everything under '[dir]', but not 'dir' folder itself
+# The pattern '![dir-1]/[dir-2]' negates a greedy exclusion and should be added after the pattern '[dir-1]/*'
+#==================================================
+
+local-config.php
+.sass-cache
+wp-content/ai1wm-backups/*
+wp-content/plugins/all-in-one-wp-migration/storage/*
+
+#==================================================
+# Static files
+#==================================================
+
+wp-content/uploads/*
+
+#==================================================
+# Hidden system files
+#==================================================
+
+*.DS_Store
+*[Tt]humbs.db
+*.Trashes
+*.sass-cache
