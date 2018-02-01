@@ -1,3 +1,8 @@
+#Disable TRACE/TRACK httpd methods (XST vulnerability)
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} ^TRACE
+RewriteRule .* - [F]
+
 #Redirect spam comments
 <IfModule mod_rewrite.c>
 RewriteEngine On
