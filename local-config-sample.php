@@ -1,3 +1,5 @@
+<?php 
+
 /** The name of the database for WordPress */
 define('DB_NAME', 'db');
 
