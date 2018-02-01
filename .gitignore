@@ -6,6 +6,7 @@
 # The pattern '![dir-1]/[dir-2]' negates a greedy exclusion and should be added after the pattern '[dir-1]/*'
 #==================================================
 
+.htaccess
 local-config.php
 .sass-cache
 wp-content/ai1wm-backups/*
