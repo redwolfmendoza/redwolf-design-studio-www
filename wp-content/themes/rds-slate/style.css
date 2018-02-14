@@ -6,6 +6,12 @@ Version: 0.0.1
 Tags: bootstrap
 */
 
+body {
+    background-image:url(/wp-content/uploads/2018/02/dark-redwoods-bg.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
 .homepage-section,
 .logo-container {
     width:100%;
@@ -17,7 +23,7 @@ Tags: bootstrap
 }
 
 .logo-container {
-    margin:100px auto 160px auto;
+    margin:100px auto;
 }
 
 .logo {
@@ -32,4 +38,5 @@ Tags: bootstrap
 .rds-branding,
 .rds-slogan {
     text-align:center !important;
+    color:#ffffff !important;
 }
