@@ -5,3 +5,38 @@ Description: General blog template
 Version: 0.0.1
 Tags: bootstrap
 */
+
+body {
+    background-image:url(/wp-content/uploads/2018/02/dark-redwoods-bg.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.homepage-section,
+.logo-container {
+    width:100%;
+}
+
+.homepage-section {
+    padding:0;
+    margin:0;
+}
+
+.logo-container {
+    margin:100px auto;
+}
+
+.logo {
+    padding:0;
+    margin:0 auto;
+    min-width:120px;
+    min-height:120px;
+    max-width:320px;
+    max-height:320px;
+}
+
+.rds-branding,
+.rds-slogan {
+    text-align:center !important;
+    color:#ffffff !important;
+}
