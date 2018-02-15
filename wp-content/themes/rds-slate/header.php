@@ -14,6 +14,7 @@
     <link href="<?php echo get_bloginfo('template_directory'); ?>/css/bootstrap.min.css" rel="stylesheet">
 
     <!--Theme CSS-->
+    <link href="<?php echo get_bloginfo('template_directory'); ?>/css/fonts.css" rel="stylesheet">
     <link href="<?php echo get_bloginfo('template_directory'); ?>/css/blog.css" rel="stylesheet">
     <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
 
