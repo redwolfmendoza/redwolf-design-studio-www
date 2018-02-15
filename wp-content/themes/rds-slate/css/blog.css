@@ -155,12 +155,13 @@ h6, .h6 {
  */
 
 .blog-footer {
-    display:none;
-  padding: 40px 0;
-  color: #999;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-top: 1px solid #e5e5e5;
+    position:fixed;
+    width:100%;
+    bottom:0;
+    padding: 40px 0;
+    color: #ffffff;
+    text-align: center;
+    background-color:rgba(0,0,0,0.5);
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
