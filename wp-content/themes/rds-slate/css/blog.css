@@ -3,7 +3,7 @@
  */
 
 body {
-    font-family: 'ExpoSansStd-Medium', Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     color: #222;
 }
 
@@ -14,7 +14,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 0;
-  font-family: 'ExpoSansStd-SemiBold', Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #222;
 }
