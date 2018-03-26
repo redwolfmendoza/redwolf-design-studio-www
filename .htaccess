@@ -1,17 +1,17 @@
 #Disable TRACE/TRACK httpd methods (XST vulnerability)
-RewriteEngine On
-RewriteCond %{REQUEST_METHOD} ^TRACE
-RewriteRule .* - [F]
+#RewriteEngine On
+#RewriteCond %{REQUEST_METHOD} ^TRACE
+#RewriteRule .* - [F]
 
 #Redirect spam comments
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{REQUEST_METHOD} POST
-RewriteCond %{REQUEST_URI} .wp-comments-post\.php*
-RewriteCond %{HTTP_REFERER} !.*thecredits.org.* [OR]
-RewriteCond %{HTTP_USER_AGENT} ^$
-RewriteRule (.*) ^http://%{REMOTE_ADDR}/$ [R=301,L]
-</IfModule>
+#<IfModule mod_rewrite.c>
+#RewriteEngine On
+#RewriteCond %{REQUEST_METHOD} POST
+#RewriteCond %{REQUEST_URI} .wp-comments-post\.php*
+#RewriteCond %{HTTP_REFERER} !.*thecredits.org.* [OR]
+#RewriteCond %{HTTP_USER_AGENT} ^$
+#RewriteRule (.*) ^http://%{REMOTE_ADDR}/$ [R=301,L]
+#</IfModule>
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>

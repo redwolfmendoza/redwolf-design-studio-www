@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="<?php echo get_bloginfo( 'description' ); ?>">
     <meta name="author" content="">
 
-    <title>Redwolf Design</title>
+    <title><?php echo get_bloginfo( 'name' ); ?></title>
 
     <!--Boostrap CSS-->
     <link href="<?php echo get_bloginfo('template_directory'); ?>/css/bootstrap.min.css" rel="stylesheet">
@@ -27,26 +27,34 @@
     <?php wp_head();?>
       
   </head>
-
   <body>
-
+      
     <div class="blog-masthead">
-      <div class="container">
-          <!--
-        <nav class="blog-nav">
-          <a class="blog-nav-item active" href="#">Home</a>
-          <a class="blog-nav-item" href="#">About</a>
-            <a class="blog-nav-item" href="#">Contact</a>
-        </nav>
--->
-      </div>
+        <div class="container">
+            <nav class="blog-nav">
+                <a class="blog-nav-item active" href="#">Home</a>
+                <?php wp_list_pages( '&title_li=' ); ?>
+            </nav>
+        </div>
     </div>
+      
 
-    <div class="container">
+    <?php if( is_home() ): ?>
+      
+    <section class="homepage-section">
+        <div class="logo-container">
+            <div class="logo">
+                <a href="/">
+                    <img class="img-responsive" src="/wp-content/themes/rds-slate/img/rds-640x640.png" width="320" height="320">
+                </a>
+            </div>
+        </div>
+        <div class="intro-container">
+            <h1 class="rds-branding">Redwolf&nbsp;Design&nbsp;Studio</h1>
+            <h4 class="rds-slogan">Professional web development and design services since 2008. San Fernando Valley, CA.</h4>
+        </div>
+    </section>
 
-    <!--
-      <div class="blog-header">
-        <h1 class="blog-title">The Bootstrap Blog</h1>
-        <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
-      </div>
--->
+    <?php endif; ?>
+      
+    <div class="container content-wrapper">
